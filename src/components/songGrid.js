@@ -5,7 +5,9 @@ import React from 'react'
 const songGrid = ({albums, isLoading}) => {
     return isLoading?(<h1> Loading </h1>) : <section>
 
-        
+        {albums.map(album => (
+            <h1> {album.title.label}</h1>
+        ))}
         </section>
 } 
 
