@@ -1,0 +1,17 @@
+body { padding-top: 50px; 
+padding-left: 20px;
+padding-right: 20px;
+}
+
+.nbTextColor{
+    background-color: white;
+    width: 90%;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.red {
+  background-color: red;
+}
