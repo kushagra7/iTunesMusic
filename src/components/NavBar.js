@@ -7,7 +7,7 @@ import '../styles/styles.css';
 const SongCard = () => {
     return (
         <Navbar fixed="top" bg="primary" variant="dark">
-        <Navbar.Brand href="#home">Top Music On ITunes</Navbar.Brand>
+        <Navbar.Brand href="#home">Top Albums On ITunes</Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-end">
           <Navbar.Text>
