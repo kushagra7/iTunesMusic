@@ -6,8 +6,8 @@ import { Card, Button } from 'react-bootstrap/'
 const SongItem = ({ album }) => {
     console.log(album)
     return (
-            <Card className="box songItem" style ={{width:'12rem'}} border='primary' key={album.id.attributes['im:id']}>
-                <Card.Img variant="top" src={album['im:image'][2].label} />
+            <Card className="box" style ={{width:'12rem'}} border='primary' key={album.id.attributes['im:id']}>
+                <Card.Img className = "image" variant="top" src={album['im:image'][2].label}  />
                 <Card.Body>
                     <Card.Title>{album.title.label}</Card.Title>
 

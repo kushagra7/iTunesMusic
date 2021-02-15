@@ -15,10 +15,16 @@ margin-top: 80px;
   flex-wrap: wrap;
   flex-direction: row;
 }
-.songItem{
-  flex-basis: calc(20%-40px)
+.theme{
+  margin-left: 5%;
 }
 
 .box{
   margin: 20px;
+  border-radius: 10px 10px 10px 10px;
 }
+
+.image{
+  border-radius: 10px 10px 0px 0px;
+}
+
