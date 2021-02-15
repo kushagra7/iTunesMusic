@@ -11,20 +11,20 @@ const SongItem = ({ album }) => {
         <Card className="box" style={{ width: '12rem' }} border='primary' key={album.id.attributes['im:id']}>
             <Card.Img className="image" variant="top" src={album['im:image'][2].label} />
             <Card.Body>
-                <Card.Title>{}
-                <TextTruncate
-                    line={2}
-                    truncateText="…"
-                    text={album.title.label}
-                />
+                <Card.Title>{ }
+                    <TextTruncate
+                        line={2}
+                        truncateText="…"
+                        text={album.title.label}
+                    />
                 </Card.Title>
 
                 <Card.Text>
                     <TextTruncate
-                    line={1}
-                    truncateText="…"
-                    text={album['im:artist'].label}
-                />
+                        line={1}
+                        truncateText="…"
+                        text={album['im:artist'].label}
+                    />
                 </Card.Text>
                 <blockquote className="blockquote mb-0">
                     <footer className="blockquote-footer">

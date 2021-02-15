@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios';
-import NavBar from './components/NavBar'
-import SongGrid from './components/songGrid'
 import './styles/styles.css';
+import NavBarSearch from './components/NavBarSearch'
+import SongGrid from './components/songGrid'
 
 const App = () => {
   //2 things albums, setAlbums is a function that we use to manipulate the state.
@@ -24,8 +24,8 @@ const App = () => {
   //we are taking our global state and pass into songgrid staet as a prop 
   return (
     <div>
-      <NavBar/>      
-      <SongGrid isLoading={isLoading} albums = {albums} />
+      <NavBarSearch />
+      <SongGrid isLoading={isLoading} albums={albums} />
     </div>
   )
 }
