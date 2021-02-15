@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios';
-import SongCard from './components/SongCard'
 import NavBar from './components/NavBar'
 import SongGrid from './components/songGrid'
 import './styles/styles.css';

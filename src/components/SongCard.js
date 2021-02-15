@@ -12,7 +12,7 @@ const SongCard = () => {
     
     const renderCard = (card, index) => {
         return (
-            <Card border='primary' style={{ width: '15rem' }} key={index}>
+            <Card border='primary' style={{ width: '2rem' }} key={index}>
                 <Card.Img variant="top" src={card.image} />
                 <Card.Body>
                     <Card.Title>{card.title}</Card.Title>

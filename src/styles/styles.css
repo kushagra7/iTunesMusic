@@ -1,6 +1,7 @@
 body { 
 padding-left: 20px;
 padding-right: 20px;
+margin-top: 80px;
 }
 
 .nbTextColor{
@@ -8,32 +9,16 @@ padding-right: 20px;
     width: 90%;
 }
 
-.yellow {
-  background-color: yellow;
+.grid{
+  min-height: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.songItem{
+  flex-basis: calc(20%-40px)
 }
 
-.red {
-  background-color: red;
-}
-
-.cards {
-  padding-top: 80px;
-  display: grid;
-  grid-template-columns: repeat(5,1fr);
-  gap : 1 rem;
-}
-
-@media (max-width : 800 px){
-  .cards {
-    text-align: center;
-    grid-template-columns: repeat(2,1fr);
-  }
-}
-
-
-@media (max-width : 500 px){
-  .cards {
-    text-align: center;
-    grid-template-columns: 1fr;
-  }
+.box{
+  margin: 20px;
 }

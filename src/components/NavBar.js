@@ -6,7 +6,7 @@ import '../styles/styles.css';
 //functional component using es6 arrow function
 const SongCard = () => {
     return (
-        <Navbar fixed="top" bg="primary" variant="dark">
+        <Navbar className ="navBar" fixed="top" bg="primary" variant="dark">
         <Navbar.Brand href="#home">Top Albums On ITunes</Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-end">
