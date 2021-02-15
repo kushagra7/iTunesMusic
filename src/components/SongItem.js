@@ -13,9 +13,9 @@ const SongItem = ({ album }) => {
             <Card.Body>
                 <Card.Title>{ }
                     <TextTruncate
-                        line={2}
+                        line={1}
                         truncateText="…"
-                        text={album.title.label}
+                        text={album['im:name'].label}
                     />
                 </Card.Title>
 
