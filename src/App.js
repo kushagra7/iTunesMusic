@@ -3,6 +3,7 @@ import axios from 'axios';
 import SongCard from './components/SongCard'
 import NavBar from './components/NavBar'
 import SongGrid from './components/songGrid'
+import './styles/styles.css';
 
 const App = () => {
   //2 things albums, setAlbums is a function that we use to manipulate the state.

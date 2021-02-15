@@ -1,4 +1,4 @@
-body { padding-top: 50px; 
+body { 
 padding-left: 20px;
 padding-right: 20px;
 }
@@ -17,8 +17,7 @@ padding-right: 20px;
 }
 
 .cards {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding-top: 80px;
   display: grid;
   grid-template-columns: repeat(5,1fr);
   gap : 1 rem;
@@ -26,6 +25,7 @@ padding-right: 20px;
 
 @media (max-width : 800 px){
   .cards {
+    text-align: center;
     grid-template-columns: repeat(2,1fr);
   }
 }
@@ -33,6 +33,7 @@ padding-right: 20px;
 
 @media (max-width : 500 px){
   .cards {
+    text-align: center;
     grid-template-columns: 1fr;
   }
 }

@@ -7,10 +7,12 @@ import Button from 'react-bootstrap/Button'
 const SongItem = ({ album }) => {
     console.log(album)
     return (
+        <section>
         <Card border='primary' style={{ width: '15rem' }} key={album.id.attributes['im:id']}>
             <Card.Img variant="top" src={album['im:image'][2].label} />
             <Card.Body>
                 <Card.Title>{album.title.label}</Card.Title>
+
                 <Card.Text>
                     Artist : {album['im:artist'].label}
                 </Card.Text>
@@ -19,9 +21,13 @@ const SongItem = ({ album }) => {
                         Price : <cite title="Source Title">{album['im:price'].label}</cite>
                     </footer>
                 </blockquote>
-                <Button variant="primary" href= {album.link.attributes.href}target="_blank">Album Link</Button>
+                <Button variant="primary" href={album.link.attributes.href} target="_blank">Album Link</Button>
             </Card.Body>
+            <Card.Footer>
+                <small className="text-muted">{album.rights.label}</small>
+            </Card.Footer>
         </Card >
+        </section>
     )
 }
 

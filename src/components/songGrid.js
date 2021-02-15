@@ -1,5 +1,6 @@
 import React from 'react'
 import SongItem from './SongItem'
+import '../styles/styles.css';
 
 //we have to catch the props that were passed in from app component but we are directly
 //catching
