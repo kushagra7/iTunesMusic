@@ -28,3 +28,9 @@ margin-top: 80px;
   border-radius: 10px 10px 0px 0px;
 }
 
+.btn{
+  display:flex;
+    justify-content:center;
+    align-item:center;
+    margin-top: 100px;
+  }
