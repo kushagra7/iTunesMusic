@@ -73,10 +73,8 @@ padding-top: 80px;
 }
 
 .btn{
-  display:flex;
-    justify-content:center;
-    margin-top: 5%;
-    margin-left: 11%;
+  width: 80%;
+margin-left: 10%;
   }
 
 .searchBar{
