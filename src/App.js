@@ -23,7 +23,7 @@ const App = () => {
 
   //we are taking our global state and pass into songgrid staet as a prop 
   return (
-    <div>
+    <div >
       <NavBar />
       <SongGrid isLoading={isLoading} albums={albums} />
     </div>
