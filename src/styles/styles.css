@@ -12,7 +12,6 @@ padding-top: 80px;
     background-color: white;
     width: 100%;
 }
-
 .album{
   font-family: Arial, sans-serif;
   font-size: 15pt;
@@ -62,6 +61,11 @@ padding-top: 80px;
 .box{
   margin: 20px;
   border-radius: 10px 10px 10px 10px;
+  transition: 0.3s;
+}
+
+.box:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.338);
 }
 
 .image{
@@ -76,5 +80,6 @@ padding-top: 80px;
   }
 
 .search{
-  width: 92%;
+  padding-left:0.8%;
+  width: 91%;
 }
