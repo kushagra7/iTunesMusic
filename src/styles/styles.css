@@ -109,7 +109,8 @@ margin-left: 10%;
 }
 
 /*ipad Pro media query*/
-@media (min-width:510px) and (max-width : 1024px){  .box{
+@media (min-width:510px) and (max-width : 1024px){  
+  .box{
     margin: 20px;
     border-radius: 10px 10px 10px 10px;
     transition: 0.3s;
@@ -123,8 +124,15 @@ margin-left: 10%;
     }
 }
 
-@media (min-width:510px) and (max-width : 1024px){  .searchBar{
+@media (min-width:510px) and (max-width : 1024px){  
+  .searchBar{
     padding-top: 3%;
     width: 95%;
+  }
+}
+
+@media (min-width:1300px) and (max-width : 1500px){  
+  .searchBar{
+    width: 93%;
   }
 }
