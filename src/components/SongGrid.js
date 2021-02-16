@@ -20,8 +20,8 @@ const SongGrid = ({ albums, isLoading }) => {
 
     return isLoading ? (<Spinner animation="border" style={style} variant="primary"/>) : (
         <Container fluid className='grid theme'>
-            <Row className='search'>
-                <Form.Control type="text" placeholder="Search Album"  className= "center" onChange={e => setSearch(e.target.value)}/>
+            <Row className='searchBar'>
+                <Form.Control type="text" placeholder="Search Album" onChange={e => setSearch(e.target.value)}/>
             </Row>
             <Row>
                 {filteredAlbum.map(album => (

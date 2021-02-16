@@ -79,7 +79,53 @@ padding-top: 80px;
     margin-left: 12%;
   }
 
-.search{
+.searchBar{
   padding-left:0.8%;
   width: 91%;
+}
+
+/*iphone media query*/
+@media all and (max-width : 500px){
+  .box{
+    margin: 2px;
+    border-radius: 10px 10px 10px 10px;
+    transition: 0.3s;
+  }
+}
+
+@media all and (max-width : 500px){
+  body { 
+    padding-left: 24%;
+    padding-top: 20%;
+    }
+}
+
+@media all and (max-width : 500px){
+  .searchBar{
+    padding-left:0%;
+    padding-right:14%;
+    padding-bottom: 5%;
+    width: 91%;
+  }
+}
+
+/*ipad Pro media query*/
+@media (min-width:510px) and (max-width : 1024px){  .box{
+    margin: 20px;
+    border-radius: 10px 10px 10px 10px;
+    transition: 0.3s;
+  }
+}
+
+@media (min-width:510px) and (max-width : 1024px){
+  body { 
+    padding-left: 2%;
+    padding-top: 5%;
+    }
+}
+
+@media (min-width:510px) and (max-width : 1024px){  .searchBar{
+    padding-top: 3%;
+    width: 95%;
+  }
 }
