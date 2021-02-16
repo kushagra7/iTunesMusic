@@ -143,3 +143,19 @@ margin-left: 10%;
     width: 95%;
   }
 }
+
+/*ipad*/
+@media (min-width:520px) and (max-width : 800px){  
+  .searchBar{
+    width: 98%;
+    padding-top: 5%;
+  }
+}
+
+/*ipad*/
+@media (min-width:520px) and (max-width : 800px){  
+  body { 
+    padding-left: 4%;
+    padding-top: 5%;
+    }
+}
