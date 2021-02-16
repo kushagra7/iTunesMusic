@@ -11,38 +11,30 @@ const SongItem = ({ album }) => {
         <Card className="box" style={{ width: '12rem' }} border='primary' key={album.id.attributes['im:id']}>
             <Card.Img className="image" variant="top" src={album['im:image'][2].label} />
             <Card.Body>
-                <Card.Title>{ }
+                <Card.Text className='album'>{ }
                     <TextTruncate
                         line={1}
                         truncateText="…"
                         text={album['im:name'].label}
                     />
-                </Card.Title>
+                </Card.Text>
 
-                <Card.Text>
+                <Card.Text className='artist'>
                     <TextTruncate
-                        line={1}
+                        line={2}
                         truncateText="…"
                         text={album['im:artist'].label}
                     />
                 </Card.Text>
-                <blockquote className="blockquote mb-0">
-                    <footer className="blockquote-footer">
-                        Price : <cite title="Source Title">{album['im:price'].label}</cite>
-                    </footer>
-                </blockquote>
+                <p className='price'>Price : {album['im:price'].label}</p>
+                <p className='genre'>Genre : {album.category.attributes.label}</p>
                 <Button className="btn" variant="primary" href={album.link.attributes.href} target="_blank">Album Link</Button>
             </Card.Body>
-            <Card.Footer>
-                <TextTruncate
-                    line={2}
-                    truncateText="…"
-                    text={album.rights.label}
-                    className="text-muted"
-                />
+            <Card.Footer className='font-release text-muted'>
+                Release Date : {album['im:releaseDate'].attributes.label}
             </Card.Footer>
-
         </Card >
+        
     )
 }
 
