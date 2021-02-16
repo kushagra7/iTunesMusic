@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Container, Row, Form } from 'react-bootstrap'
+import { Container, Row, Form, Spinner } from 'react-bootstrap'
 import SongItem from './SongItem'
 import '../styles/styles.css';
 
@@ -8,6 +8,7 @@ import '../styles/styles.css';
 const SongGrid = ({ albums, isLoading }) => {
     const [search, setSearch] = useState('')
     const [filteredAlbum, setFilteredAlbum] = useState([])
+    const style = { position: "fixed", top: "40%", left: "50%" };
 
     useEffect(() => {
         setFilteredAlbum(
@@ -17,7 +18,7 @@ const SongGrid = ({ albums, isLoading }) => {
         )
     }, [search, albums]);
 
-    return isLoading ? (<h1> Loading </h1>) : (
+    return isLoading ? (<Spinner animation="border" style={style} variant="primary"/>) : (
         <Container fluid className='grid theme'>
             <Row className='search'>
                 <Form.Control type="text" placeholder="Search Album"  onChange={e => setSearch(e.target.value)}/>
