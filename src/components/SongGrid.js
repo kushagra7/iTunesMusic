@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Container, Row, Form } from 'react-bootstrap'
+import { Container, Row, Col, Form, Dropdown, DropdownButton } from 'react-bootstrap'
 import '../styles/styles.css';
 import SongItem from './SongItem'
 import LoadingScreen from '../components/LoadingScreen';
@@ -18,10 +18,28 @@ const SongGrid = ({ albums, isLoading }) => {
         )
     }, [search, albums]);
 
+    //sortBy Function
+    function clickHandler(str) {
+        setFilteredAlbum(
+            albums.filter(album => {
+                return album.category.attributes.term.toString().toLowerCase() == (str)
+            })
+        )
+    }
+
     return isLoading ? (<LoadingScreen />) : (
         <Container fluid className='grid theme'>
             <Row className='searchBar'>
-                <Form.Control type="text" placeholder="Search Album" onChange={e => setSearch(e.target.value)} />
+                <Col sm={10}>
+                    <Form.Control type="text" placeholder="Search Album" onChange={e => setSearch(e.target.value)} />
+                </Col>
+                <Col sm={2}>
+                    <DropdownButton id="dropdown-basic-button" title="Sort By">
+                        <Dropdown.Item onClick={() => clickHandler('pop')}>Pop</Dropdown.Item>
+                        <Dropdown.Item onClick={() => clickHandler('rock')}>Rock</Dropdown.Item>
+                        <Dropdown.Item onClick={() => clickHandler('country')}>Country</Dropdown.Item>
+                    </DropdownButton>
+                </Col>
             </Row>
             <Row>
                 {filteredAlbum.map(album => (

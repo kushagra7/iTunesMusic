@@ -3,10 +3,12 @@ import Navbar from 'react-bootstrap/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const NavBar = () => {
-
+    function refreshPage() {
+        window.location.reload(false);
+      }
     return (
         <Navbar className="navBar" fixed="top" bg="primary" variant="dark">
-            <Navbar.Brand href="#home">Top Albums On ITunes</Navbar.Brand>
+            <Navbar.Brand onClick={refreshPage}>Top Albums On ITunes</Navbar.Brand>
             <Navbar.Toggle />
 
             <Navbar.Collapse className="justify-content-end">

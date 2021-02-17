@@ -71,6 +71,7 @@ a:hover, a:visited, a:link, a:active
 
 .box:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.338);
+  background-color: #f8fbf8;
 }
 
 .image{
@@ -83,8 +84,7 @@ a:hover, a:visited, a:link, a:active
   }
 
 .searchBar{
-  padding-left:0.8%;
-  width: 91%;
+  width: 92%;
 }
 
 .cardClick{
