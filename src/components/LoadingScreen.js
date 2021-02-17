@@ -1,5 +1,6 @@
 import React,{ useEffect, useRef } from 'react'
 import lottie from 'lottie-web'
+import '../styles/styles.css';
 
 const LoadingScreen = () => {
     const container = useRef(null)
@@ -15,8 +16,8 @@ const LoadingScreen = () => {
     }, [])
 
     return (
-        <div>
-            <div className='container' ref={container}>  </div>
+        <div className="loading">
+            <div className='container loading' ref={container}>  </div>
         </div>
     )
 }

@@ -94,8 +94,13 @@ margin-left: 10%;
 
 @media all and (max-width : 500px){
   body { 
-    padding-left: 23%;
-    padding-top: 20%;
+    padding-top: 18%;
+    }
+}
+
+@media all and (max-width : 500px){
+  .loading { 
+    margin-left: -100px;
     }
 }
 
