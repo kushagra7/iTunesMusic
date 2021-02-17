@@ -3,14 +3,13 @@ import { Card, Button } from 'react-bootstrap/'
 import TextTruncate from 'react-text-truncate';
 
 //we receive the album as a prop and we have full object and we can use 
-
 const SongItem = ({ album }) => {
     return (
         <a className='cardClick' href={album.link.attributes.href} target="_blank" >
             <Card className="box" style={{ width: '12rem' }} border='primary' key={album.id.attributes['im:id']}>
                 <Card.Img className="image" variant="top" src={album['im:image'][2].label} />
                 <Card.Body>
-                    <Card.Text className='album'>{ }
+                    <Card.Text className='album'>
                         <TextTruncate
                             line={1}
                             truncateText="…"

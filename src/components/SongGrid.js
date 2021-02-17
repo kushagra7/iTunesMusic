@@ -9,7 +9,7 @@ import LoadingScreen from '../components/LoadingScreen';
 const SongGrid = ({ albums, isLoading }) => {
     const [search, setSearch] = useState('')
     const [filteredAlbum, setFilteredAlbum] = useState([])
-    
+
     useEffect(() => {
         setFilteredAlbum(
             albums.filter(album => {
@@ -27,9 +27,9 @@ const SongGrid = ({ albums, isLoading }) => {
         )
     }
 
-    const refreshPage = ()=>{
+    const refreshPage = () => {
         window.location.reload();
-     }
+    }
 
     return isLoading ? (<LoadingScreen />) : (
         <Container fluid className='grid theme'>
@@ -45,7 +45,7 @@ const SongGrid = ({ albums, isLoading }) => {
                     </DropdownButton>
                 </Col>
                 <Col sm={2}>
-                <Button onClick={refreshPage} variant="outline-primary">Clear</Button>
+                    <Button onClick={refreshPage} variant="outline-primary">Clear</Button>
                 </Col>
             </Row>
             <Row>
