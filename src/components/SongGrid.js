@@ -38,7 +38,7 @@ const SongGrid = ({ albums, isLoading }) => {
                     <Form.Control type="text" placeholder="Search Album" onChange={e => setSearch(e.target.value)} />
                 </Col>
                 <Col sm={2}>
-                    <DropdownButton id="dropdown-basic-button" title="Sort By">
+                    <DropdownButton id="dropdown-basic-button" title="Filter">
                         <Dropdown.Item onClick={() => clickHandler('pop')}>Pop</Dropdown.Item>
                         <Dropdown.Item onClick={() => clickHandler('rock')}>Rock</Dropdown.Item>
                         <Dropdown.Item onClick={() => clickHandler('country')}>Country</Dropdown.Item>
