@@ -84,7 +84,7 @@ a:hover, a:visited, a:link, a:active
   }
 
 .searchBar{
-  width: 94%;
+  width: 92%;
   padding-right: 1%;
 }
 
@@ -163,7 +163,7 @@ a:hover, a:visited, a:link, a:active
 @media (min-width:520px) and (max-width : 800px){  
   .searchBar{
     padding-top: 5%;
-    width: 100%;
+    width: 98%;
   }
 }
 
@@ -184,3 +184,11 @@ a:hover, a:visited, a:link, a:active
       width: 92%;
     }
 }
+
+/*24inch monitor*/
+@media screen 
+  and (min-device-width: 1600px) {
+    .searchBar{
+      width: 94%;
+    }
+  }
