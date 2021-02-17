@@ -142,7 +142,7 @@ a:hover, a:visited, a:link, a:active
 @media (min-width:510px) and (max-width : 1024px){  
   .searchBar{
     padding-top: 3%;
-    width: 94%;
+    width: 97%;
   }
 }
 
@@ -171,5 +171,16 @@ a:hover, a:visited, a:link, a:active
 @media (min-width:520px) and (max-width : 800px){  
   body { 
     padding-top: 5%;
+    }
+}
+
+/*macbook 13.3 inch*/
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+    .searchBar{
+      width: 92%;
     }
 }
