@@ -8,6 +8,11 @@ padding-left: 100px;
 padding-top: 80px;
 }
 
+a:hover, a:visited, a:link, a:active
+{
+  text-decoration: none !important
+}
+
 .nbTextColor{
     background-color: white;
     width: 100%;
@@ -74,12 +79,16 @@ padding-top: 80px;
 
 .btn{
   width: 80%;
-margin-left: 10%;
+  margin-left: 10%;
   }
 
 .searchBar{
   padding-left:0.8%;
   width: 91%;
+}
+
+.cardClick{
+  cursor: 'pointer'; 
 }
 
 /*iphone media query*/

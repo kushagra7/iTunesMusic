@@ -1,4 +1,4 @@
-import React,{ useEffect, useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import lottie from 'lottie-web'
 import '../styles/styles.css';
 
@@ -7,11 +7,11 @@ const LoadingScreen = () => {
 
     useEffect(() => {
         lottie.loadAnimation({
-            container : container.current,
-            renderer : 'svg',
+            container: container.current,
+            renderer: 'svg',
             loop: true,
-            autoplay : true,
-            animationData : require('../loading_panda.json')
+            autoplay: true,
+            animationData: require('../loading_panda.json')
         })
     }, [])
 

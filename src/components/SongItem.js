@@ -8,6 +8,7 @@ const SongItem = ({ album }) => {
     console.log(album)
 
     return (
+        <a className='cardClick' href={album.link.attributes.href} target="_blank" >
         <Card className="box" style={{ width: '12rem' }} border='primary' key={album.id.attributes['im:id']}>
             <Card.Img className="image" variant="top" src={album['im:image'][2].label} />
             <Card.Body>
@@ -34,7 +35,7 @@ const SongItem = ({ album }) => {
                 Release Date : {album['im:releaseDate'].attributes.label}
             </Card.Footer>
         </Card >
-        
+        </a>
     )
 }
 
