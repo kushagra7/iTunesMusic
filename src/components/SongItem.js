@@ -5,8 +5,6 @@ import TextTruncate from 'react-text-truncate';
 //we receive the album as a prop and we have full object and we can use 
 
 const SongItem = ({ album }) => {
-    console.log(album)
-
     return (
         <a className='cardClick' href={album.link.attributes.href} target="_blank" >
         <Card className="box" style={{ width: '12rem' }} border='primary' key={album.id.attributes['im:id']}>

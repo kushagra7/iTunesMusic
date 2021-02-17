@@ -84,7 +84,8 @@ a:hover, a:visited, a:link, a:active
   }
 
 .searchBar{
-  width: 92%;
+  width: 94%;
+  padding-right: 1%;
 }
 
 .cardClick{
@@ -115,7 +116,7 @@ a:hover, a:visited, a:link, a:active
 
 @media all and (max-width : 500px){
   .searchBar{
-    padding-left:0%;
+    padding-left:1%;
     padding-right:14%;
     padding-bottom: 5%;
     width: 91%;
@@ -141,13 +142,13 @@ a:hover, a:visited, a:link, a:active
 @media (min-width:510px) and (max-width : 1024px){  
   .searchBar{
     padding-top: 3%;
-    width: 95%;
+    width: 94%;
   }
 }
 
 @media (min-width:1030px) and (max-width : 1295px){  
   .searchBar{
-    width: 99%;
+    width: 90%;
     padding-left: 1.5%;
   }
 }
@@ -161,15 +162,14 @@ a:hover, a:visited, a:link, a:active
 /*ipad*/
 @media (min-width:520px) and (max-width : 800px){  
   .searchBar{
-    width: 98%;
     padding-top: 5%;
+    width: 100%;
   }
 }
 
 /*ipad*/
 @media (min-width:520px) and (max-width : 800px){  
   body { 
-    padding-left: 4%;
     padding-top: 5%;
     }
 }

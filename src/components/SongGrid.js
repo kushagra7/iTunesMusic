@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Container, Row, Col, Form, Dropdown, DropdownButton } from 'react-bootstrap'
+import { Button, Container, Row, Col, Form, Dropdown, DropdownButton } from 'react-bootstrap'
 import '../styles/styles.css';
 import SongItem from './SongItem'
 import LoadingScreen from '../components/LoadingScreen';
@@ -9,7 +9,7 @@ import LoadingScreen from '../components/LoadingScreen';
 const SongGrid = ({ albums, isLoading }) => {
     const [search, setSearch] = useState('')
     const [filteredAlbum, setFilteredAlbum] = useState([])
-
+    
     useEffect(() => {
         setFilteredAlbum(
             albums.filter(album => {
@@ -27,11 +27,18 @@ const SongGrid = ({ albums, isLoading }) => {
         )
     }
 
+    const refreshPage = ()=>{
+        window.location.reload();
+     }
+
     return isLoading ? (<LoadingScreen />) : (
         <Container fluid className='grid theme'>
             <Row className='searchBar'>
-                <Col sm={10}>
+                <Col sm={8}>
                     <Form.Control type="text" placeholder="Search Album" onChange={e => setSearch(e.target.value)} />
+                </Col>
+                <Col sm={2}>
+                <Button onClick={refreshPage} variant="outline-primary">Refresh</Button>
                 </Col>
                 <Col sm={2}>
                     <DropdownButton id="dropdown-basic-button" title="Sort By">
