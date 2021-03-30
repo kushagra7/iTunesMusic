@@ -1,6 +1,10 @@
-# Getting Started with Create React App
+# iTunes Top Albums
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+View Top Albums on iTunes.
+
+### `Deployed Web App Link :`
+
+https://laughing-raman-8ba407.netlify.app
 
 ## Available Scripts
 
